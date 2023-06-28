@@ -1,0 +1,32 @@
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+@bot.command()
+async def start(ctx):
+  await ctx.send(f'Привет! Я специальный бот-помощник, который поможет тебе с правильной сортировкой мусора. У меня есть несколько функций. Напиши $help_, чтобы узнать о них.')
+
+@bot.command()
+async def help_(ctx):
+  await ctx.send(f'Напиши $info для того, чтобы я рассказал тебе какие виды перерабатываемого пластика бывают. Напиши $photo, чтобы я показал тебе, где значок переработки можно найти на упаковке чипсов')
+
+@bot.command()
+async def info(ctx):
+  with open('images/info.jpeg', 'rb') as f:
+        picture = discord.File(f)
+  await ctx.send(file=picture)
+
+@bot.command()
+async def photo(ctx):
+  with open('photos/photo.jpg', 'rb') as f:
+        picture = discord.File(f)
+  await ctx.send(file=picture)
+
+
+  
+
+bot.run('MTExNzg1NzY5MTMxOTE0MDM1Mg.GYpM8t.06bDGijWVSKVvTLylSjRwrOXLvM4YTNHL4DAOI')
