@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Полезная информация!</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Это очень большой заголовок!</h1>
+    <p>Это просто какой-то абзац текста</p>
+    <h2>А это заголовок поменьше</h2>
+             <ul>
+                   <li>А это точечки в списке (Это первая)</li>
+                   <li>А это вторая</li>
+             </ul>
+     <img src="https://w.forfun.com/fetch/4a/4af0bcc2b0c34fd573eca9f1be9ab245.jpeg" alt="Image 1">
+</body>
+</html>
+
+
+body {
+    font-family: Inter,  sans-serif; /* Семейство шрифтов */
+    font-size: 14px; /* Размер основного шрифта в <p></p>  */
+    background-color: #333333; /* Цвет фона веб-страницы */
+    color: #FFFFFF; /* Цвет основного текста */ 
+}
+h1 {
+    color: #5988FF; /* Цвет заголовка */
+    font-size: 24px; /* Размер шрифта в пунктах */
+    font-family: Georgia, serif; /* Семейство шрифтов */
+}
